@@ -9,3 +9,9 @@ export const otherState = atom({
     key: 'otherState',
     default: null,
   });
+
+
+export const isAuthenticatedState = atom({
+  key: 'isAuthenticatedState',
+  default: false, // Initial value, user is not authenticated
+});

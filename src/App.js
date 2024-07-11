@@ -2,7 +2,9 @@ import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { userDataSelector } from './state/selectors/userDataSelector';
 import { otherDataSelector } from './state/selectors/userDataSelector';
+
 import './App.css';
+import AppRouter from './router/AppRouter';
 
 function App() {
   const userData = useRecoilValue(userDataSelector);
@@ -23,13 +25,10 @@ function App() {
   const userName = userData ? userData.name : 'Guest';
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          <h1>Welcome, {userName}</h1>
-          {/* Your app content */}
-        </div>
-      </header>
+    <div>
+        
+      <AppRouter  />
+
     </div>
   );
 }
