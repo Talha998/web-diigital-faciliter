@@ -26,34 +26,9 @@ const LoginPage = () => {
   };
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(${loginBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        minHeight: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
+    <div className='login-container'>
      <FirstForm />
-      {/* <video
-        src={AnimationImage}
-        autoPlay
-        loop
-        muted
-        style={{
-          position: 'absolute',
-          top: '0',
-          left: '0',
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          zIndex: '-1',
-          opacity: '0.5',
-        }}
-      /> */}
+    
     </div>
   );
 };
