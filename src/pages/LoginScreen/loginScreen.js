@@ -42,7 +42,7 @@ const LoginScreen = () => {
           <p>or</p>
           <span></span>
         </div>
-        <p className="createAccount">New user?<span  onClick={openModal} >Create an account</span></p>
+        <a className="createAccount">New user?<span  onClick={openModal} >Create an account</span></a>
         </form>
       </div>
       <footer className="footer">
