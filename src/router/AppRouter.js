@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route , Redirect } from 'react-router-dom';
-import Login from '../pages/LoginScreen/login'; // Adjust path as per your project structure
+import LoginScreen from '../pages/LoginScreen/loginScreen'; // Adjust path as per your project structure
 import PrivateRoute from './PrivateRoute'; // Import your PrivateRoute component
 import Dashboard from '../specific/Dashboard/Dashboard';
 import { isAuthenticatedStatePart } from '../state/selectors/userDataSelector';
@@ -12,7 +12,7 @@ function AppRouter() {
     <Router>
       <Routes>
         {/* Public routes */}
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<LoginScreen />} />
         
         {/* Private routes */}
         {loggedIn == true && <Route path="/dashboard" element={<Dashboard />} /> }

@@ -1,0 +1,107 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .modal_form {
+    
+    padding: 2rem 12px;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  
+  .modal {
+    background: white;
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0D8E7C;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: "Plus Jakarta sans-serif";
+      padding: 0px 0px 0px 12px;
+      h2 {
+        margin: 0;
+      }
+      .close-button {
+        background: none;
+        color: #ffffff;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+    .photo-upload {
+      text-align: center;
+      margin: 0rem 0px 1rem 0px;
+      .photo-placeholder {
+        width: 100px;
+        height: 100px;
+        background: #DCDBDD;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      .upload-button {
+        background: none;
+        border: none;
+        color: #028090;
+        cursor: pointer;
+        margin-top: 0.5rem;
+      }
+    }
+    .input-group-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      
+    .input-group {
+      margin: 12px 12px 12px 12px;
+    
+      label {
+        display: block;
+        margin-bottom: 0px;
+        color: #84818A;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: Plus Jakarta Sans;
+      }
+      input, select {
+        // padding: 0.5rem;
+        padding: 1px 0px;
+        border: none;
+        border-bottom: 1px solid #DCDBDD;
+        border-radius: 0;
+        // margin: 0px 8px;
+        ::placeholder {
+          color: #969696;
+          font-size: 12px;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+    button {
+      background: #028090;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+  

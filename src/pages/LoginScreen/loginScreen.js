@@ -1,10 +1,20 @@
-import React from 'react';
-import './firstForm.scss';
+import React, { useState } from 'react';
+import './loginScreen.scss';
 import digitalfaciliterLogo from '../../assets/images/digitalfaciliterLogo.png';
 import samcontrolsLogo from '../../assets/images/samcontrolsLogo.png';
 import loginBackground from '../../assets/images/loginBackground.png';
 import animationVideo from '../../assets/images/UeuS37KIcY.webm';
-const Login = () => {
+import RegistrationModal from '../RegisterAcount/RegistrationModal';
+const LoginScreen = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className="loginContainer" style={{ backgroundImage: `url(${loginBackground})` }}>
       <div className='main_fluid'>
@@ -32,10 +42,8 @@ const Login = () => {
           <p>or</p>
           <span></span>
         </div>
-        <a href="#" className="createAccount">New user?<span>Create an account </span></a>
-       
+        <p className="createAccount">New user?<span  onClick={openModal} >Create an account</span></p>
         </form>
-       
       </div>
       <footer className="footer">
         <p>SAM Controls 2024 (www.samcontrols.com)</p>
@@ -57,9 +65,13 @@ const Login = () => {
       </video>
       
       </div>
+
+      {isModalOpen && ( 
+       <RegistrationModal  onClose={closeModal}/>
+)}
       
     </div>
   );
 };
 
-export default Login;
+export default LoginScreen;
