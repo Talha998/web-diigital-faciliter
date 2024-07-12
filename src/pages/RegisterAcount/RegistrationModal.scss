@@ -21,17 +21,19 @@
   
   .modal {
     background: white;
-
+border-radius: 8px;
     .modal-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: #0D8E7C;
       color: #FFFFFF;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
       font-family: "Plus Jakarta sans-serif";
-      padding: 0px 0px 0px 12px;
+      padding: 8px 6px 8px 12px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
       h2 {
         margin: 0;
       }
@@ -52,18 +54,24 @@
         background: #DCDBDD;
         border-radius: 50%;
         margin: 0 auto;
+        svg {
+           margin-top: 30px;
+        }
       }
       .upload-button {
         background: none;
         border: none;
-        color: #028090;
+        color: #046357;
         cursor: pointer;
         margin-top: 0.5rem;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Plus Jakarta sans-serif;
       }
     }
     .input-group-container {
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       width: 100%;
       
     .input-group {
@@ -77,31 +85,95 @@
         font-weight: 400;
         font-family: Plus Jakarta Sans;
       }
-      input, select {
+      input {
         // padding: 0.5rem;
         padding: 1px 0px;
+        width: 100%;
         border: none;
         border-bottom: 1px solid #DCDBDD;
         border-radius: 0;
         // margin: 0px 8px;
-        ::placeholder {
-          color: #969696;
-          font-size: 12px;
-        }
+       
         &:focus {
           outline: none;
         }
       }
+      ::placeholder {
+        color: #969696;
+        font-size: 12px;
+      }
     }
   }
-    button {
-      background: #028090;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      width: 100%;
-      border-radius: 4px;
-      cursor: pointer;
+  .input-group-container-select {
+    display: flex;
+    // justify-content: space-between;
+    width: 100%;
+    
+  .input-group {
+    margin: 12px 12px 12px 12px;
+  
+    label {
+      display: block;
+      margin-bottom: 0px;
+      color: #84818A;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: Plus Jakarta Sans;
     }
+    input {
+      // padding: 0.5rem;
+      padding: 1px 0px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #DCDBDD;
+      border-radius: 0;
+      // margin: 0px 8px;
+     
+      &:focus {
+        outline: none;
+      }
+    }
+    ::placeholder {
+      color: #969696;
+      font-size: 12px;
+    }
+    select {
+      // padding: 0.5rem;
+      width: 162px;
+      padding: 1px 0px;
+      border: none;
+      border-bottom: 1px solid #DCDBDD;
+      border-radius: 0;
+      // margin: 0px 8px;
+     
+      &:focus {
+        outline: none;
+      }
+    }
+    ::placeholder {
+      color: #969696;
+      font-size: 12px;
+    }
+  }
+}
+.btn_form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  button {
+    background: #046357;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    // width: 100%;
+    border-radius: 4px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+  
+ 
   }
   

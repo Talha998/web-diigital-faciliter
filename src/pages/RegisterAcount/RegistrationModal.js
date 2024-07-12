@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaCamera } from "react-icons/fa";
 import './RegistrationModal.scss';
 
 function RegistrationModal({ onClose }) {
@@ -16,13 +17,16 @@ function RegistrationModal({ onClose }) {
         <div className='modal_form' >
         <form>
           <div className="photo-upload">
-            <div className="photo-placeholder"></div>
+            <div className="photo-placeholder">
+            <FaCamera size={30} color="black" />
+
+            </div>
             <button type="button" className="upload-button">Upload Photo</button>
           </div>
           <div className='input-group-container' >
           <div className="input-group">
           <label htmlFor="userId">User ID</label>
-            <input type="text" placeholder="Enter user Id" required />
+            <input type="text" placeholder="Enter User ID" required />
             </div>
             <div className="input-group">
             <label htmlFor="userId">Full Name</label>
@@ -31,7 +35,7 @@ function RegistrationModal({ onClose }) {
             </div>
 
 
-            {/* <div className='input-group-container' >
+            <div className='input-group-container-select' >
           <div className="input-group">
           <label htmlFor="userId">Password</label>
           <input type="password" placeholder="Type your password" required />
@@ -43,7 +47,7 @@ function RegistrationModal({ onClose }) {
          
             </select>
             </div>
-            </div> */}
+            </div>
       
 
           <div className='input-group-container' >
@@ -56,7 +60,9 @@ function RegistrationModal({ onClose }) {
             <input type="text" placeholder="Phone Number" required />
             </div>
             </div>
+            <div className='btn_form' >
           <button type="submit">Submit</button>
+          </div>
         </form>
         </div>
       </div>
