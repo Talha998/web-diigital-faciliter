@@ -1,0 +1,74 @@
+.login-container {
+    background-image: url('../../assets/images/loginBackground.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    margin-bottom: 20px;
+  }
+  
+  .input-field label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-field input:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .new-user {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  
+  
+  .samcontrols-logo {
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+  }
+  
+  .animated-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+  }
