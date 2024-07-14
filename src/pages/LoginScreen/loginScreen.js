@@ -5,8 +5,10 @@ import samcontrolsLogo from '../../assets/images/samcontrolsLogo.png';
 import loginBackground from '../../assets/images/loginBackground.png';
 import animationVideo from '../../assets/images/UeuS37KIcY.webm';
 import RegistrationModal from '../RegisterAcount/RegistrationModal';
+import Forgetpassword from '../ForgetScreen/Forgetpassword';
 const LoginScreen = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isForgetOpen, setForgetOpen] = useState('true');
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -14,6 +16,9 @@ const LoginScreen = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+  const open_ForgotPassword = () => {
+    setForgetOpen(!isForgetOpen);
   };
   return (
     <div className="loginContainer" style={{ backgroundImage: `url(${loginBackground})` }}>
@@ -24,7 +29,7 @@ const LoginScreen = () => {
         <img className='digitalfaciliterLogo' src={digitalfaciliterLogo} alt="Digital Faciliter Logo" />
         </div>
       <div className="loginBox">
-       
+       {isForgetOpen ?   
         <form className='form_rt' >
         <h1>Sign in</h1>
           <div className="inputGroup">
@@ -35,7 +40,7 @@ const LoginScreen = () => {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" placeholder="Enter Password" />
           </div>
-          <a href="#" className="forgotPassword">Forgot Password?</a>
+          <p className="forgotPassword"  onClick={open_ForgotPassword}>Forgot Password?</p>
           <button type="submit" className="signInButton">Sign In</button>
           <div className="orSeparator">
           <span></span>
@@ -44,6 +49,7 @@ const LoginScreen = () => {
         </div>
         <a className="createAccount">New user?<span  onClick={openModal} >Create an account</span></a>
         </form>
+         : <Forgetpassword onClick={() => setForgetOpen(true)} /> }
       </div>
       <footer className="footer">
         <p>SAM Controls 2024 (www.samcontrols.com)</p>

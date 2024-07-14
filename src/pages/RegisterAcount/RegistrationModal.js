@@ -41,12 +41,12 @@ function RegistrationModal({ onClose }) {
           <input type="password" placeholder="Type your password" required />
             </div>
             <div className="input-group">
-            <label htmlFor="userId">Designation</label>
-            <select required>
-              <option value="" disabled selected>Select Designation</option>
-         
-            </select>
-            </div>
+  <label htmlFor="userId">Designation</label>
+  <select required defaultValue="">
+    <option value="" disabled>Select Designation</option>
+    {/* Add more options here */}
+  </select>
+</div>
             </div>
       
 

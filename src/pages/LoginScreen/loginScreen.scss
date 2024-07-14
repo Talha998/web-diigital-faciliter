@@ -64,7 +64,7 @@
 
 h1 {
   font-size: 24px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   color: #333;
 }
 
@@ -111,6 +111,7 @@ h1 {
   font-size: 12px;
   font-weight: 400;
   font-family: Plus Jakarta sans-serif;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;
