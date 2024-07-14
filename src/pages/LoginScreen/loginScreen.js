@@ -6,10 +6,13 @@ import loginBackground from '../../assets/images/loginBackground.png';
 import animationVideo from '../../assets/images/UeuS37KIcY.webm';
 import RegistrationModal from '../RegisterAcount/RegistrationModal';
 import Forgetpassword from '../ForgetScreen/Forgetpassword';
+import { isForgetOpenState } from '../../state/atoms/userAtom';
+import { useRecoilState } from 'recoil';
 
 const LoginScreen = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isForgetOpen, setForgetOpen] = useState('true');
+  // const [isForgetOpen, setForgetOpen] = useState(true);
+  const [isForgetOpen, setForgetOpen] = useRecoilState(isForgetOpenState);
 
   const openModal = () => {
     setIsModalOpen(true);

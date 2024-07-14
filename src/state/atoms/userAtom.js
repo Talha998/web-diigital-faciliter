@@ -15,3 +15,11 @@ export const isAuthenticatedState = atom({
   key: 'isAuthenticatedState',
   default: false, // Initial value, user is not authenticated
 });
+
+export const isForgetOpenState = atom({
+  key: 'isForgetOpenState', // Unique key for the atom
+  default: true,            // Initial value
+});
+
+
+
