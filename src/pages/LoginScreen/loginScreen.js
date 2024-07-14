@@ -6,6 +6,7 @@ import loginBackground from '../../assets/images/loginBackground.png';
 import animationVideo from '../../assets/images/UeuS37KIcY.webm';
 import RegistrationModal from '../RegisterAcount/RegistrationModal';
 import Forgetpassword from '../ForgetScreen/Forgetpassword';
+
 const LoginScreen = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isForgetOpen, setForgetOpen] = useState('true');
