@@ -51,7 +51,7 @@ const LoginScreen = () => {
           <p>or</p>
           <span></span>
         </div>
-        <a className="createAccount">New user?<span  onClick={openModal} >Create an account</span></a>
+        <a className='d_flex createAccountSpan' >New user?<span className="createAccount"  onClick={openModal} >Create an account</span></a>
         </form>
          : <Forgetpassword onClick={() => setForgetOpen(true)} /> }
       </div>
